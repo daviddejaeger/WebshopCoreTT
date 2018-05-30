@@ -74,7 +74,6 @@ namespace WebshopCoreTT.Data
                     OnSale = false,
                     IsNew = false
                 };
-
                 rubber.Products.Add(product1);
                 rubber.Products.Add(product2);
                 houtje.Products.Add(product3);
