@@ -1,0 +1,37 @@
+﻿@inject IViewLocalizer Localizer
+
+<li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        @Localizer["Taal"]
+        <img class="flag" src="~/images/be_4x3.svg">
+    </a>
+    @*<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <a class="dropdown-item" href="/?culture=nl">NL | Nederlands<img class="flag" src="~/images/nl_4x3.svg"></a>
+        <a class="dropdown-item flag-icon-be" href="~/?culture=nl-BE">BE | Nederlands <img class="flag" src="~/images/be_4x3.svg"></a>
+        <a class="dropdown-item flag-icon-be" href="~/?culture=fr">BE | Français <img class="flag" src="~/images/fr_4x3.svg"></a>
+        <a class="dropdown-item flag-icon-fr" href="~/?culture=fr">FR | Français <img class="flag" src="~/images/fr_4x3.svg"></a>
+        <a class="dropdown-item flag-icon-gb" href="~/?culture=en-GB">GB | English <img class="flag" src="~/images/gb_4x3.svg"></a>
+    </div>*@
+    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+        <form asp-controller="Home" asp-action="SetLanguage" asp-route-returnUrl="@Context.Request.Path"
+              method="post" asp-route-culture="nl">
+            <button type="submit" class="dropdown-item">NL | Nederlands<img class="flag" src="~/images/nl_4x3.svg"></button>
+        </form>
+        <form asp-controller="Home" asp-action="SetLanguage" asp-route-returnUrl="@Context.Request.Path"
+              method="post" asp-route-culture="nl-BE">
+            <button type="submit" class="dropdown-item">BE | Nederlands<img class="flag" src="~/images/be_4x3.svg"></button>
+        </form>
+        <form asp-controller="Home" asp-action="SetLanguage" asp-route-returnUrl="@Context.Request.Path"
+              method="post" asp-route-culture="fr">
+            <button type="submit" class="dropdown-item">BE | Français<img class="flag" src="~/images/be_4x3.svg"></button>
+        </form>
+        <form asp-controller="Home" asp-action="SetLanguage" asp-route-returnUrl="@Context.Request.Path"
+              method="post" asp-route-culture="fr">
+            <button type="submit" class="dropdown-item">FR | Français<img class="flag" src="~/images/fr_4x3.svg"></button>
+        </form>
+        <form asp-controller="Home" asp-action="SetLanguage" asp-route-returnUrl="@Context.Request.Path"
+              method="post" asp-route-culture="en-GB">
+            <button type="submit" class="dropdown-item">GB | English<img class="flag" src="~/images/gb_4x3.svg"></button>
+        </form>
+    </div>
+</li>

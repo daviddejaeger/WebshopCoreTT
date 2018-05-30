@@ -1,0 +1,61 @@
+﻿@using Microsoft.AspNetCore.Mvc.Localization
+@model WebshopCoreTT.Models.ViewModels.HomeViewModels.IndexViewModel
+
+@inject IViewLocalizer Localizer
+
+<div class="row">
+    <div class="col-lg-6">
+        <h3>Welkom in onze online tafeltennisshop</h3><br>
+        <p>
+            Aangezien wij in een opstartfase zijn, zijn maar een beperkt aantal producten beschikbaar en kunnen de levertijden wat langer duren.
+        </p><br>
+        <ul>
+            <li>
+                Scherpe prijzen
+            </li>
+            <br>
+            <li>
+                Gratis levering in België en Nederland vanaf €100,00
+            </li>
+            <br>
+        </ul>
+        <p>
+            Gelieve je te registreren om op de hoogte te blijven van de nieuwste ontwikkelingen en aanbiedingen.
+        </p>
+    </div>
+    <div class="hidden-xs col-lg-6">
+        <img src='~/images/images3.jpg' alt='images3.jpg'>
+    </div>
+</div>
+@if (Model.PromoProducts.Count() >= 1)
+{
+    <div class="promos">
+        <h4>@Localizer["Promos"]</h4>
+        <div class="row">
+            @foreach (var product in Model.PromoProducts)
+            {
+                <div class="col">
+                    @product.Name
+                </div>
+            }
+        </div>      
+    </div>
+    <br>
+}
+
+@if (Model.NewProducts.Count() >= 1)
+{
+    <div class="new">
+        <h4>@Localizer["Nieuw"]</h4>
+        <div class="row">
+            @foreach (var product in Model.NewProducts)
+            {
+                <div class="col">
+                    @product.Name
+                </div>
+            }
+        </div>
+    </div>
+}
+
+
