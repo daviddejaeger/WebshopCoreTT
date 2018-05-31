@@ -39,7 +39,52 @@ namespace WebshopCoreTT.Data
                     Description = "De nieuwe STIGA Mantra is ontwikkeld met behulp van de nieuwste Japanse rubber" +
                     " - technologie en biedt de perfecte balans tussen synthetisch en natuur rubber.",
                     OnSale = false,
-                    IsNew = true
+                    IsNew = true,
+                    ImagePath = "/images/Stiga-Mantra-S.jpg"
+                };
+                Product product4 = new Product
+                {
+                    Name = "Stiga Mantra S",
+                    Price = 30.90,
+                    Manufacturer = "Stiga",
+                    Description = "De nieuwe STIGA Mantra is ontwikkeld met behulp van de nieuwste Japanse rubber" +
+                    " - technologie en biedt de perfecte balans tussen synthetisch en natuur rubber.",
+                    OnSale = false,
+                    IsNew = true,
+                    ImagePath = "/images/Stiga-Mantra-S.jpg"
+                };
+                Product product5 = new Product
+                {
+                    Name = "Stiga Mantra S",
+                    Price = 30.90,
+                    Manufacturer = "Stiga",
+                    Description = "De nieuwe STIGA Mantra is ontwikkeld met behulp van de nieuwste Japanse rubber" +
+                    " - technologie en biedt de perfecte balans tussen synthetisch en natuur rubber.",
+                    OnSale = false,
+                    IsNew = true,
+                    ImagePath = "/images/Stiga-Mantra-S.jpg"
+                };
+                Product product6 = new Product
+                {
+                    Name = "Stiga Mantra S",
+                    Price = 30.90,
+                    Manufacturer = "Stiga",
+                    Description = "De nieuwe STIGA Mantra is ontwikkeld met behulp van de nieuwste Japanse rubber" +
+                    " - technologie en biedt de perfecte balans tussen synthetisch en natuur rubber.",
+                    OnSale = false,
+                    IsNew = true,
+                    ImagePath = "/images/Stiga-Mantra-S.jpg"
+                };
+                Product product7 = new Product
+                {
+                    Name = "Stiga Mantra S",
+                    Price = 30.90,
+                    Manufacturer = "Stiga",
+                    Description = "De nieuwe STIGA Mantra is ontwikkeld met behulp van de nieuwste Japanse rubber" +
+                    " - technologie en biedt de perfecte balans tussen synthetisch en natuur rubber.",
+                    OnSale = false,
+                    IsNew = true,
+                    ImagePath = "/images/Stiga-Mantra-S.jpg"
                 };
                 Product product2 = new Product
                 {
@@ -59,7 +104,113 @@ namespace WebshopCoreTT.Data
                     "Mega Tension : De Mega Tension technologie verhoogt de veerkracht zonder het gewicht van de rubber te veranderen," +
                     "dankzij een sneller herstel van de rubber.",
                     OnSale = true,
-                    IsNew = false
+                    IsNew = false,
+                    ImagePath = "/images/Nittaku-magic-carbon.jpg"
+                };
+                Product product8 = new Product
+                {
+                    Name = "Nittaku Magic Carbon",
+                    Price = 32.90,
+                    SalesPrice = 28.90,
+                    Manufacturer = "Nittaku",
+                    Description = "De Carbo rubber heeft een uitzonderlijk katapult-effect en meer snelheid dan de klassieke rubbers," +
+                    " met een enorme klank bij het raken van de bal. Het STIGA Air - Capsule systeem(ACS) kende een wereldwijd succes," +
+                    "met 5 beroemde rubbers: Magna, Innova Premium, Innova, Innova Ultra Light en Radical. Alle onderlagen van deze " +
+                    "rubbers hebben de ACS technologie, wat zorgt voor snelheid en veerkracht, voor een heel lichte rubber, met een " +
+                    "uitzonderlijke controle.Vandaag heeft de Research &Development afdeling van STIGA de oplossing gevonden om de " +
+                    "toplaag nog te verbeteren. De Mega tension technologie die de toplaag van de rubber verbetert, in combinate met de" +
+                    "verbeterde onderlaag met de ACS, zorgt voor de snelste rubbers met de beste controle." +
+                    "Air Capsule System(ACS) : De ACS technologie maakt het mogelijk om een enorme snelheid te combineren met een" +
+                    "maximale veerkracht, zonder verlies van controle, bij een ultra - lichte rubber." +
+                    "Mega Tension : De Mega Tension technologie verhoogt de veerkracht zonder het gewicht van de rubber te veranderen," +
+                    "dankzij een sneller herstel van de rubber.",
+                    OnSale = true,
+                    IsNew = false,
+                    ImagePath = "/images/Nittaku-magic-carbon.jpg"
+                };
+                Product product9 = new Product
+                {
+                    Name = "Nittaku Magic Carbon",
+                    Price = 32.90,
+                    SalesPrice = 28.90,
+                    Manufacturer = "Nittaku",
+                    Description = "De Carbo rubber heeft een uitzonderlijk katapult-effect en meer snelheid dan de klassieke rubbers," +
+                    " met een enorme klank bij het raken van de bal. Het STIGA Air - Capsule systeem(ACS) kende een wereldwijd succes," +
+                    "met 5 beroemde rubbers: Magna, Innova Premium, Innova, Innova Ultra Light en Radical. Alle onderlagen van deze " +
+                    "rubbers hebben de ACS technologie, wat zorgt voor snelheid en veerkracht, voor een heel lichte rubber, met een " +
+                    "uitzonderlijke controle.Vandaag heeft de Research &Development afdeling van STIGA de oplossing gevonden om de " +
+                    "toplaag nog te verbeteren. De Mega tension technologie die de toplaag van de rubber verbetert, in combinate met de" +
+                    "verbeterde onderlaag met de ACS, zorgt voor de snelste rubbers met de beste controle." +
+                    "Air Capsule System(ACS) : De ACS technologie maakt het mogelijk om een enorme snelheid te combineren met een" +
+                    "maximale veerkracht, zonder verlies van controle, bij een ultra - lichte rubber." +
+                    "Mega Tension : De Mega Tension technologie verhoogt de veerkracht zonder het gewicht van de rubber te veranderen," +
+                    "dankzij een sneller herstel van de rubber.",
+                    OnSale = true,
+                    IsNew = false,
+                    ImagePath = "/images/Nittaku-magic-carbon.jpg"
+                };
+                Product product10 = new Product
+                {
+                    Name = "Nittaku Magic Carbon",
+                    Price = 32.90,
+                    SalesPrice = 28.90,
+                    Manufacturer = "Nittaku",
+                    Description = "De Carbo rubber heeft een uitzonderlijk katapult-effect en meer snelheid dan de klassieke rubbers," +
+                    " met een enorme klank bij het raken van de bal. Het STIGA Air - Capsule systeem(ACS) kende een wereldwijd succes," +
+                    "met 5 beroemde rubbers: Magna, Innova Premium, Innova, Innova Ultra Light en Radical. Alle onderlagen van deze " +
+                    "rubbers hebben de ACS technologie, wat zorgt voor snelheid en veerkracht, voor een heel lichte rubber, met een " +
+                    "uitzonderlijke controle.Vandaag heeft de Research &Development afdeling van STIGA de oplossing gevonden om de " +
+                    "toplaag nog te verbeteren. De Mega tension technologie die de toplaag van de rubber verbetert, in combinate met de" +
+                    "verbeterde onderlaag met de ACS, zorgt voor de snelste rubbers met de beste controle." +
+                    "Air Capsule System(ACS) : De ACS technologie maakt het mogelijk om een enorme snelheid te combineren met een" +
+                    "maximale veerkracht, zonder verlies van controle, bij een ultra - lichte rubber." +
+                    "Mega Tension : De Mega Tension technologie verhoogt de veerkracht zonder het gewicht van de rubber te veranderen," +
+                    "dankzij een sneller herstel van de rubber.",
+                    OnSale = true,
+                    IsNew = false,
+                    ImagePath = "/images/Nittaku-magic-carbon.jpg"
+                };
+                Product product11 = new Product
+                {
+                    Name = "Nittaku Magic Carbon",
+                    Price = 32.90,
+                    SalesPrice = 28.90,
+                    Manufacturer = "Nittaku",
+                    Description = "De Carbo rubber heeft een uitzonderlijk katapult-effect en meer snelheid dan de klassieke rubbers," +
+                    " met een enorme klank bij het raken van de bal. Het STIGA Air - Capsule systeem(ACS) kende een wereldwijd succes," +
+                    "met 5 beroemde rubbers: Magna, Innova Premium, Innova, Innova Ultra Light en Radical. Alle onderlagen van deze " +
+                    "rubbers hebben de ACS technologie, wat zorgt voor snelheid en veerkracht, voor een heel lichte rubber, met een " +
+                    "uitzonderlijke controle.Vandaag heeft de Research &Development afdeling van STIGA de oplossing gevonden om de " +
+                    "toplaag nog te verbeteren. De Mega tension technologie die de toplaag van de rubber verbetert, in combinate met de" +
+                    "verbeterde onderlaag met de ACS, zorgt voor de snelste rubbers met de beste controle." +
+                    "Air Capsule System(ACS) : De ACS technologie maakt het mogelijk om een enorme snelheid te combineren met een" +
+                    "maximale veerkracht, zonder verlies van controle, bij een ultra - lichte rubber." +
+                    "Mega Tension : De Mega Tension technologie verhoogt de veerkracht zonder het gewicht van de rubber te veranderen," +
+                    "dankzij een sneller herstel van de rubber.",
+                    OnSale = true,
+                    IsNew = false,
+                    ImagePath = "/images/Nittaku-magic-carbon.jpg"
+                };
+                Product product12 = new Product
+                {
+                    Name = "Nittaku Magic Carbon",
+                    Price = 32.90,
+                    SalesPrice = 28.90,
+                    Manufacturer = "Nittaku",
+                    Description = "De Carbo rubber heeft een uitzonderlijk katapult-effect en meer snelheid dan de klassieke rubbers," +
+                    " met een enorme klank bij het raken van de bal. Het STIGA Air - Capsule systeem(ACS) kende een wereldwijd succes," +
+                    "met 5 beroemde rubbers: Magna, Innova Premium, Innova, Innova Ultra Light en Radical. Alle onderlagen van deze " +
+                    "rubbers hebben de ACS technologie, wat zorgt voor snelheid en veerkracht, voor een heel lichte rubber, met een " +
+                    "uitzonderlijke controle.Vandaag heeft de Research &Development afdeling van STIGA de oplossing gevonden om de " +
+                    "toplaag nog te verbeteren. De Mega tension technologie die de toplaag van de rubber verbetert, in combinate met de" +
+                    "verbeterde onderlaag met de ACS, zorgt voor de snelste rubbers met de beste controle." +
+                    "Air Capsule System(ACS) : De ACS technologie maakt het mogelijk om een enorme snelheid te combineren met een" +
+                    "maximale veerkracht, zonder verlies van controle, bij een ultra - lichte rubber." +
+                    "Mega Tension : De Mega Tension technologie verhoogt de veerkracht zonder het gewicht van de rubber te veranderen," +
+                    "dankzij een sneller herstel van de rubber.",
+                    OnSale = true,
+                    IsNew = false,
+                    ImagePath = "/images/Nittaku-magic-carbon.jpg"
                 };
                 Product product3 = new Product
                 {
@@ -76,6 +227,15 @@ namespace WebshopCoreTT.Data
                 };
                 rubber.Products.Add(product1);
                 rubber.Products.Add(product2);
+                rubber.Products.Add(product4);
+                rubber.Products.Add(product5);
+                rubber.Products.Add(product6);
+                rubber.Products.Add(product7);
+                rubber.Products.Add(product8);
+                rubber.Products.Add(product9);
+                rubber.Products.Add(product10);
+                rubber.Products.Add(product11);
+                rubber.Products.Add(product12);
                 houtje.Products.Add(product3);
                 _context.Categories.Add(rubber);
                 _context.Categories.Add(houtje);

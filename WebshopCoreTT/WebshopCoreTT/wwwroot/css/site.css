@@ -8,58 +8,15 @@
     margin-left: 0.5em;
 }
 
-/*.flag-icon-background {
-    background-size: contain;
-    background-position: 50%;
-    background-repeat: no-repeat;
+.card-img-top {
+    padding: 1em;
 }
 
-.flag-icon {
-    background-size: contain;
-    background-position: 50%;
-    background-repeat: no-repeat;
-    position: relative;
-    display: inline-block;
-    width: 1.33333333em;
-    line-height: 1em;
+.linethrough{
+    text-decoration: line-through;
+    text-decoration-color: red;
 }
 
-    .flag-icon:before {
-        content: "\00a0";
-    }
-
-    .flag-icon.flag-icon-squared {
-        width: 1em;
-    }
-
-.flag-icon-be {
-    background-image: url(../images/be_4x3.svg);
+.red{
+    color: red;
 }
-
-    .flag-icon-be.flag-icon-squared {
-        background-image: url(../images/be_1x1.svg);
-    }
-
-.flag-icon-fr {
-    background-image: url(../images/fr_4x3.svg);
-}
-
-    .flag-icon-fr.flag-icon-squared {
-        background-image: url(../images/fr_1x1.svg);
-    }
-
-.flag-icon-gb {
-    background-image: url(../images/gb_4x3.svg);
-}
-
-    .flag-icon-gb.flag-icon-squared {
-        background-image: url(../images/gb_1x1.svg);
-    }
-
-.flag-icon-nl {
-    background-image: url(../images/nl_4x3.svg);
-}
-
-    .flag-icon-nl.flag-icon-squared {
-        background-image: url(../images/nl_1x1.svg);
-    }*/

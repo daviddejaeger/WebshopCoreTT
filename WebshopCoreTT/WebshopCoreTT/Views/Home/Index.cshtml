@@ -27,18 +27,36 @@
         <img src='~/images/images3.jpg' alt='images3.jpg'>
     </div>
 </div>
+<br />
 @if (Model.PromoProducts.Count() >= 1)
 {
     <div class="promos">
         <h4>@Localizer["Promos"]</h4>
+        <br />
         <div class="row">
             @foreach (var product in Model.PromoProducts)
-            {
-                <div class="col">
-                    @product.Name
-                </div>
+            {              
+                <div class="col-sm-6 col-lg-3">
+                    <div class="card w-100">
+                        <a asp-controller="HomeController" asp-action="Index">
+                            <img class="card-img-top" src="~/images/Nittaku-magic-carbon.jpg" alt="product-img">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title">@product.Name</h5>
+                            @if (product.OnSale)
+                            {
+                                <p class="card-text linethrough d-inline-block">€@product.Price</p>
+                                <p class="d-inline-block red"> €@product.SalesPrice</p>
+                            }
+                            else
+                            {
+                                <p class="card-text">€@product.Price</p>
+                            }
+                        </div>
+                    </div>
+                </div>            
             }
-        </div>      
+        </div>
     </div>
     <br>
 }
