@@ -7,6 +7,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using WebshopCoreTT.Data.Mapping;
 using WebshopCoreTT.Models;
+using WebshopCoreTT.Models.Domain;
 
 namespace WebshopCoreTT.Data
 {
@@ -14,6 +15,8 @@ namespace WebshopCoreTT.Data
     {
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
+        public DbSet<Rubber> Rubbers { get; set; }
+        public DbSet<Houtje> Houtjes { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {

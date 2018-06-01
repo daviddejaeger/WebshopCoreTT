@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using WebshopCoreTT.Models;
+using WebshopCoreTT.Models.Domain;
 
 namespace WebshopCoreTT.Data
 {
@@ -31,7 +31,7 @@ namespace WebshopCoreTT.Data
                 rubber.Products = new List<Product>();
                 houtje.Products = new List<Product>();
 
-                Product product1 = new Product
+                Rubber product1 = new Rubber
                 {
                     Name = "Stiga Mantra S",
                     Price = 30.90,
@@ -42,7 +42,7 @@ namespace WebshopCoreTT.Data
                     IsNew = true,
                     ImagePath = "/images/Stiga-Mantra-S.jpg"
                 };
-                Product product4 = new Product
+                Rubber product4 = new Rubber
                 {
                     Name = "Stiga Mantra S",
                     Price = 30.90,
@@ -53,7 +53,7 @@ namespace WebshopCoreTT.Data
                     IsNew = true,
                     ImagePath = "/images/Stiga-Mantra-S.jpg"
                 };
-                Product product5 = new Product
+                Rubber product5 = new Rubber
                 {
                     Name = "Stiga Mantra S",
                     Price = 30.90,
@@ -64,7 +64,7 @@ namespace WebshopCoreTT.Data
                     IsNew = true,
                     ImagePath = "/images/Stiga-Mantra-S.jpg"
                 };
-                Product product6 = new Product
+                Rubber product6 = new Rubber
                 {
                     Name = "Stiga Mantra S",
                     Price = 30.90,
@@ -75,7 +75,7 @@ namespace WebshopCoreTT.Data
                     IsNew = true,
                     ImagePath = "/images/Stiga-Mantra-S.jpg"
                 };
-                Product product7 = new Product
+                Rubber product7 = new Rubber
                 {
                     Name = "Stiga Mantra S",
                     Price = 30.90,
@@ -86,7 +86,7 @@ namespace WebshopCoreTT.Data
                     IsNew = true,
                     ImagePath = "/images/Stiga-Mantra-S.jpg"
                 };
-                Product product2 = new Product
+                Rubber product2 = new Rubber
                 {
                     Name = "Nittaku Magic Carbon",
                     Price = 32.90,
@@ -107,7 +107,7 @@ namespace WebshopCoreTT.Data
                     IsNew = false,
                     ImagePath = "/images/Nittaku-magic-carbon.jpg"
                 };
-                Product product8 = new Product
+                Rubber product8 = new Rubber
                 {
                     Name = "Nittaku Magic Carbon",
                     Price = 32.90,
@@ -128,7 +128,7 @@ namespace WebshopCoreTT.Data
                     IsNew = false,
                     ImagePath = "/images/Nittaku-magic-carbon.jpg"
                 };
-                Product product9 = new Product
+                Rubber product9 = new Rubber
                 {
                     Name = "Nittaku Magic Carbon",
                     Price = 32.90,
@@ -149,7 +149,7 @@ namespace WebshopCoreTT.Data
                     IsNew = false,
                     ImagePath = "/images/Nittaku-magic-carbon.jpg"
                 };
-                Product product10 = new Product
+                Rubber product10 = new Rubber
                 {
                     Name = "Nittaku Magic Carbon",
                     Price = 32.90,
@@ -170,7 +170,7 @@ namespace WebshopCoreTT.Data
                     IsNew = false,
                     ImagePath = "/images/Nittaku-magic-carbon.jpg"
                 };
-                Product product11 = new Product
+                Rubber product11 = new Rubber
                 {
                     Name = "Nittaku Magic Carbon",
                     Price = 32.90,
@@ -191,7 +191,7 @@ namespace WebshopCoreTT.Data
                     IsNew = false,
                     ImagePath = "/images/Nittaku-magic-carbon.jpg"
                 };
-                Product product12 = new Product
+                Rubber product12 = new Rubber
                 {
                     Name = "Nittaku Magic Carbon",
                     Price = 32.90,
@@ -212,7 +212,7 @@ namespace WebshopCoreTT.Data
                     IsNew = false,
                     ImagePath = "/images/Nittaku-magic-carbon.jpg"
                 };
-                Product product3 = new Product
+                Houtje product3 = new Houtje
                 {
                     Name = "Stiga Arctic Wood",
                     Price = 89.90,
@@ -223,7 +223,51 @@ namespace WebshopCoreTT.Data
                     "VPS technologie als tweede laag, wat zorgt voor stabiliteit en demping van de trillingen, hebben we met deze Arctic " +
                     "een onvergelijkbaar hout met unieke eigenschappen gecreëerd.",
                     OnSale = false,
-                    IsNew = false
+                    IsNew = false,
+                    ImagePath = "/images/stiga-artic-wood.jpg"
+                };
+                Houtje product13 = new Houtje
+                {
+                    Name = "Stiga Arctic Wood",
+                    Price = 89.90,
+                    SalesPrice = 79.90,
+                    Manufacturer = "Stiga",
+                    Description = "Het Arctic hout is wat je bekomt als je natuur en wetenschap combineert. Een hout dat geboren is in " +
+                    "de natuur en ontworpen met onze know-how en onze ervaring. Voor dit hout hebben we een buitenlaag gevonden van een" +
+                    " zeldzame boom die groeit in de koude en diepe wouden van de Arctische cirkel. Door toevoeging van onze gerenommeerde " +
+                    "VPS technologie als tweede laag, wat zorgt voor stabiliteit en demping van de trillingen, hebben we met deze Arctic " +
+                    "een onvergelijkbaar hout met unieke eigenschappen gecreëerd.",
+                    OnSale = true,
+                    IsNew = false,
+                    ImagePath = "/images/stiga-artic-wood.jpg"
+                };
+                Houtje product14 = new Houtje
+                {
+                    Name = "Stiga Arctic Wood",
+                    Price = 89.90,
+                    Manufacturer = "Stiga",
+                    Description = "Het Arctic hout is wat je bekomt als je natuur en wetenschap combineert. Een hout dat geboren is in " +
+                    "de natuur en ontworpen met onze know-how en onze ervaring. Voor dit hout hebben we een buitenlaag gevonden van een" +
+                    " zeldzame boom die groeit in de koude en diepe wouden van de Arctische cirkel. Door toevoeging van onze gerenommeerde " +
+                    "VPS technologie als tweede laag, wat zorgt voor stabiliteit en demping van de trillingen, hebben we met deze Arctic " +
+                    "een onvergelijkbaar hout met unieke eigenschappen gecreëerd.",
+                    OnSale = false,
+                    IsNew = true,
+                    ImagePath = "/images/stiga-artic-wood.jpg"
+                };
+                Houtje product15 = new Houtje
+                {
+                    Name = "Stiga Arctic Wood",
+                    Price = 89.90,
+                    Manufacturer = "Stiga",
+                    Description = "Het Arctic hout is wat je bekomt als je natuur en wetenschap combineert. Een hout dat geboren is in " +
+                    "de natuur en ontworpen met onze know-how en onze ervaring. Voor dit hout hebben we een buitenlaag gevonden van een" +
+                    " zeldzame boom die groeit in de koude en diepe wouden van de Arctische cirkel. Door toevoeging van onze gerenommeerde " +
+                    "VPS technologie als tweede laag, wat zorgt voor stabiliteit en demping van de trillingen, hebben we met deze Arctic " +
+                    "een onvergelijkbaar hout met unieke eigenschappen gecreëerd.",
+                    OnSale = false,
+                    IsNew = false,
+                    ImagePath = "/images/stiga-artic-wood.jpg"
                 };
                 rubber.Products.Add(product1);
                 rubber.Products.Add(product2);
@@ -237,6 +281,9 @@ namespace WebshopCoreTT.Data
                 rubber.Products.Add(product11);
                 rubber.Products.Add(product12);
                 houtje.Products.Add(product3);
+                houtje.Products.Add(product13);
+                houtje.Products.Add(product14);
+                houtje.Products.Add(product15);
                 _context.Categories.Add(rubber);
                 _context.Categories.Add(houtje);
                 _context.SaveChanges();

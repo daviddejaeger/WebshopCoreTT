@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace WebshopCoreTT.Models
+namespace WebshopCoreTT.Models.Domain
 {
     public class Product
     {
@@ -16,6 +16,7 @@ namespace WebshopCoreTT.Models
         public string Manufacturer { get; set; }
         public bool OnSale { get; set; }
         public bool IsNew { get; set; }
+
         //public int CategoryId { get; set; }
         //public Category Category { get; set; }
     }

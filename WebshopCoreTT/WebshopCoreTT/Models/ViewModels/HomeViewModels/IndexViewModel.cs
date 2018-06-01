@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using WebshopCoreTT.Models.Domain;
 
 namespace WebshopCoreTT.Models.ViewModels.HomeViewModels
 {

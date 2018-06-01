@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WebshopCoreTT.Data.Repositories;
-using WebshopCoreTT.Models;
+using WebshopCoreTT.Models.Domain;
 
 namespace WebshopCoreTT.Controllers
 {

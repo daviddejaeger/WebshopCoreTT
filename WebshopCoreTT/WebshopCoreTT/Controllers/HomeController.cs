@@ -18,18 +18,13 @@ namespace WebshopCoreTT.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly IProductRepository _productRepository;
 
-        public HomeController(IStringLocalizer<HomeController> localizer, ILogger<HomeController> logger,
-            IProductRepository productRepository)
+        public HomeController(IStringLocalizer<HomeController> localizer, IProductRepository productRepository)
         {
             _localizer = localizer;
-            _logger = logger;
             _productRepository = productRepository;
         }
         public IActionResult Index()
         {
-            _logger.LogInformation(_localizer["test"]);
-            ViewData["Message"] = _localizer["test"];
-
             var promoProducts = _productRepository.GetAllPromoProducts();
             var newProducts = _productRepository.GetAllNewProducts();
 
