@@ -15,5 +15,6 @@ namespace WebshopCoreTT.Data.Repositories
         void SaveChanges();
         IEnumerable<Product> GetAllPromoProducts();
         IEnumerable<Product> GetAllNewProducts();
+        IEnumerable<Rubber> GetAllRubbers();
     }
 }

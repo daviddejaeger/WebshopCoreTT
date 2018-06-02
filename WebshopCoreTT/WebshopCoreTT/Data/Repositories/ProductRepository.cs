@@ -42,10 +42,15 @@ namespace WebshopCoreTT.Data.Repositories
             return _products.Where(p => p.OnSale == true);
         }
 
+        public IEnumerable<Rubber> GetAllRubbers()
+        {
+            return _products.ToList().OfType<Rubber>();
+        }
+
         public Product GetById(int productId)
         {
             return _products.SingleOrDefault(p => p.Id == productId);
-        }
+        }      
 
         public void SaveChanges()
         {

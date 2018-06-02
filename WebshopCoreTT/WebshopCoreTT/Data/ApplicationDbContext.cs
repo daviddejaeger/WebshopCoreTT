@@ -17,6 +17,7 @@ namespace WebshopCoreTT.Data
         public DbSet<Category> Categories { get; set; }
         public DbSet<Rubber> Rubbers { get; set; }
         public DbSet<Houtje> Houtjes { get; set; }
+        public DbSet<CartItem> CartItems { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
         {
