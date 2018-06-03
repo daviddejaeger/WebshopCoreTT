@@ -16,7 +16,6 @@ namespace WebshopCoreTT.Models.Domain
         public string Manufacturer { get; set; }
         public bool OnSale { get; set; }
         public bool IsNew { get; set; }
-        public Brand Brand { get; set; }
 
         //public int CategoryId { get; set; }
         //public Category Category { get; set; }

@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using WebshopCoreTT.Data.Repositories;
 using WebshopCoreTT.Models.Domain;
+using WebshopCoreTT.Models.ViewModels.RubberViewModels;
 
 namespace WebshopCoreTT.Controllers
 {
@@ -19,12 +20,24 @@ namespace WebshopCoreTT.Controllers
         public IActionResult Index()
         {
             IEnumerable<Rubber> rubbers = _productRepository.GetAllRubbers();
-            //IEnumerable<Brand>
+
+            Dictionary<string, int> manufacturerCounterDictionary = new Dictionary<string, int>();
+
             foreach (var rubber in rubbers)
             {
-
+                if (manufacturerCounterDictionary.ContainsKey(rubber.Manufacturer))
+                {
+                    manufacturerCounterDictionary[rubber.Manufacturer] = manufacturerCounterDictionary[rubber.Manufacturer] + 1;
+                }
+                else
+                {
+                    manufacturerCounterDictionary.Add(rubber.Manufacturer, 1);
+                }
             }
-            return View();
+
+            var model = new IndexViewModel(rubbers, manufacturerCounterDictionary);
+
+            return View(model);
         }
     }
 }
